@@ -1,7 +1,3 @@
-<p align="center">
-  <img src="docs/logo.svg" alt="imgyn logo" width="560" />
-</p>
-
 # imgyn
 
 Simple image hosting service built with Next.js and Tailwind CSS.
