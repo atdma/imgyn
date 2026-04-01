@@ -1,0 +1,17 @@
+services:
+  imgyn:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: imgyn
+    ports:
+      - "3000:3000"
+    environment:
+      NODE_ENV: production
+      NEXT_TELEMETRY_DISABLED: "1"
+    volumes:
+      - imgyn_uploads:/app/uploads
+    restart: unless-stopped
+
+volumes:
+  imgyn_uploads:
